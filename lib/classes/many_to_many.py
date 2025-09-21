@@ -14,7 +14,7 @@ class Article:
     @title.setter
     def title(self, value):
         if hasattr(self, '_title'):
-            return  
+            return  # Ne peut pas changer après l'instanciation
         if isinstance(value, str) and 5 <= len(value) <= 50:
             self._title = value
 
