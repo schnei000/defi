@@ -79,4 +79,4 @@ class Magazine:
             if count > 2:
                 contributing_authors.append(author)
         
-        return contributing_authors  # Toujours une liste (même vide)
+        return contributing_authors if contributing_authors else None
